@@ -1,7 +1,13 @@
+import CardList from './CardList'
 const MenuList = () => {
 	return (
-		<div>
-			<div>hola</div>
+		<div className='MenuList'>
+			<CardList />
+			<CardList />
+			<CardList />
+			<CardList />
+			<CardList />
+			<CardList />
 		</div>
 	)
 }

@@ -20,7 +20,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
 		a {
 			background-color: transparent;
 			color: $color-letter;
@@ -32,6 +31,9 @@
 			cursor: pointer;
 			font-family: $Font;
 			text-decoration: none;
+		}
+		@media (max-width: 768px) {
+			justify-content: center;
 		}
 	}
 }
