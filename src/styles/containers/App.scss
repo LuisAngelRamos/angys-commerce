@@ -1,0 +1,29 @@
+@use '../globales.scss' as *;
+
+body {
+	background-color: $color-background;
+	height: 100%;
+	font-family: $Font;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+h1,
+h2,
+h3 {
+	margin: 0;
+}
+h1 {
+	font-size: 42px;
+}
+h2 {
+	font-size: 38px;
+}
+h3 {
+	font-size: 34px;
+}
+button {
+	font-family: $Font;
+}

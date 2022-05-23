@@ -1,0 +1,37 @@
+@use '../globales.scss' as *;
+.Home {
+	text-align: center;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	.Home-title {
+		grid-row: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		span {
+			font-weight: 300;
+			font-size: $Font-size;
+		}
+	}
+	.ShowMenu {
+		grid-row: 3;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		a {
+			background-color: transparent;
+			color: $color-letter;
+			padding: 4px 14px;
+			border-radius: 20px;
+			margin-bottom: 15px;
+			font-size: $Font-size;
+			border: 1px solid $color-letter;
+			cursor: pointer;
+			font-family: $Font;
+			text-decoration: none;
+		}
+	}
+}

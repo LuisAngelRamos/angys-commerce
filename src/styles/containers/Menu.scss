@@ -1,0 +1,82 @@
+@use '../globales.scss' as *;
+
+.Favorite {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+	text-align: right;
+	font-size: $Font-size;
+	@media (max-width: 768px) {
+		height: 100%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		text-align: center;
+	}
+	.Favorite-img {
+		grid-column: 1 / 3;
+		grid-row: 2 / 4;
+		background-repeat: no-repeat;
+		background-position: center center;
+		img {
+			width: 90%;
+		}
+		@media (max-width: 768px) {
+			grid-column: 1 / 3;
+			grid-row: 1 / 3;
+			width: 70%;
+			margin: auto;
+			margin-top: 50px;
+		}
+	}
+	.Favorite-title {
+		grid-column: 3;
+		grid-row: 1;
+		margin: 0 15px;
+		@media (max-width: 768px) {
+			grid-column: 1 / 3;
+			grid-row: 3;
+		}
+	}
+	.Favorite-price {
+		grid-column: 3;
+		grid-row: 2;
+		margin: 0 15px;
+		font-weight: 700;
+		@media (max-width: 768px) {
+			grid-column: 1 / 3;
+			grid-row: 4;
+		}
+	}
+	.Favorite-description {
+		grid-column: 3;
+		grid-row: 3;
+		margin: 0 15px;
+		font-weight: 300;
+		@media (max-width: 768px) {
+			grid-column: 1 / 3;
+			grid-row: 5;
+		}
+	}
+	.Favorite-button {
+		text-align: center;
+		grid-column: 3;
+		grid-row: 4;
+		margin: 0 15px;
+		button {
+			background-color: $color-variacion;
+			border: 1px solid $color-variacion;
+			color: $color-letter;
+			font-size: $Font-size;
+			border-radius: 20px;
+			padding: 4px 14px;
+			cursor: pointer;
+		}
+		@media (max-width: 768px) {
+			grid-column: 1 / 3;
+			grid-row: 6;
+		}
+	}
+}
